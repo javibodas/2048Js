@@ -4,6 +4,7 @@ $(document).ready(function() {
 	/*--CONTENEDORES--*/
 	$('body').html('<div id="container" class="container"><div id="grid"></div><div id="options"></div></div>');
 	$('body').append('<div id="score" class="data"><label>Score: 0</label></div>');
+	var score = new Score(0);
 
 	var highscore;
 	if(localStorage['highscore']){
@@ -48,7 +49,7 @@ $(document).ready(function() {
 	grid.frames = frames;
 
 	//Controlador
-	var controller = new Controller(grid,view);
+	var controller = new Controller(grid,view,score);
 
 	/*--EVENTS--*/
 	$(this.getElementById('reload')).click(function (){
