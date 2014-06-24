@@ -62,19 +62,15 @@ $(document).ready(function() {
 		switch(code){
 			case 37: 
 				moveFrames('left',controller,view,grid);
-				controller.addFrame();
 				break;
 			case 38: 
 				moveFrames('up',controller,view,grid);
-				controller.addFrame();
 				break
 			case 39: 
 				moveFrames('right',controller,view,grid);
-				controller.addFrame();
 				break;
 			case 40: 
 				moveFrames('down',controller,view,grid);
-				controller.addFrame();
 		}
 	});
 
@@ -97,12 +93,14 @@ var moveFrames = function(way,controller,view,grid){
 		console.log('Frames para eliminar antes de moverlos: ' + framesToMove.length);
 		var framesUpdated = controller.dirToMove(way,framesToMove);
 		console.log('Frames para eliminar despues de moverlos: ' + framesToMove.length);
-		/*
+
 		if(framesToMove.length==0 && framesUpdated.length==0){
-				alert('Fin del juego');
-				return;
+				/*if(TodoLleno){
+					Juego ha terminado
+				}*/
+		}else{
+			controller.addFrame();
 		}
-		*/
 		
 		view.rePaint(framesToMove,framesUpdated);
 

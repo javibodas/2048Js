@@ -313,7 +313,7 @@ var movePositive = function(frame,pos,way,length,score){
 				positionsOcupated[pos] = false;
 				o['pos'] = framePosInI.pos;
 				o['value'] = String(parseInt(frame.val)*2);
-				score.setValue(score.getValue() + o.value);
+				score.setValue(score.getValue() + parseInt(o.value));
 				return o;
 			}else{
 				positionsOcupated[i-1] = true;
@@ -362,7 +362,7 @@ var moveNegative = function(frame,pos,way,length,score){
 					positionsOcupated[pos] = false;
 					o['pos'] = framePosInI.pos;
 					o['value'] = String(parseInt(frame.val)*2);
-					score.setValue(score.getValue() + o.value);
+					score.setValue(score.getValue() + parseInt(o.value));
 					return o;
 				}else{
 					positionsOcupated[i+1] = true;
