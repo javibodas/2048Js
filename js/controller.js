@@ -183,11 +183,6 @@ var toMoveFrames = function(frames,dir,way,framesRemove){
 				/*Comprobamos los siguientes frames desde el que estamos hasta el ultimo para ver si estan vacios o no y asi
 				poder colocarlo en un sitio u otro, esta funcion nos devolvera un object con la posicion a la que ira y el valor*/
 				var o = movePositive(frames[i],i,way,frames.length-1,score);
-				/*if(!o){
-					o = new Object();
-					o['pos'] = frames[i].pos;
-					o['value'] = frames[i].val;
-				}*/
 				this.grid.frames[o.pos].val = o.value;
 				
 				if(frames[i].pos==o.pos && frames[i].val==o.value){
@@ -205,13 +200,6 @@ var toMoveFrames = function(frames,dir,way,framesRemove){
 
 				var index = jQuery.inArray(frames[i],framesRemove);
 				framesRemove.splice(index,1);
-				/*
-				var ob = new Object();
-				ob['pos'] = frames[i].pos;
-				ob['value'] = frames[i].val;
-
-				dirs.push(ob);
-				*/
 			}
 		}
 	}else{
@@ -227,12 +215,6 @@ var toMoveFrames = function(frames,dir,way,framesRemove){
 				/*Comprobamos los siguientes frames desde el que estamos hasta el ultimo para ver si estan vacios o no y asi
 				poder colocarlo en un sitio u otro, esta funcion nos devolvera un object con la posicion a la que ira y el valor*/
 				var o = moveNegative(frames[i],i,way,i,score);
-				/*if(!o){
-					o = new Object();
-					o['pos'] = frames[i].pos;
-					o['value'] = frames[i].val;
-				}
-				*/
 				this.grid.frames[o.pos].val = o.value;
 				
 				if(frames[i].pos==o.pos && frames[i].val==o.value){
@@ -250,13 +232,6 @@ var toMoveFrames = function(frames,dir,way,framesRemove){
 			}else{
 				var index = jQuery.inArray(frames[i],framesRemove);
 				framesRemove.splice(index,1);
-				/*
-				var ob = new Object();
-				ob['pos'] = frames[i].pos;
-				ob['value'] = frames[i].val;
-
-				dirs.push(ob);
-				*/
 			}
 		}
 	}
