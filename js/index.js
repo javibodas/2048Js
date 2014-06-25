@@ -90,9 +90,7 @@ var load = function (reload,controller) {
 var moveFrames = function(way,controller,view,grid){
 		
 		var framesToMove = controller.move();
-		console.log('Frames para eliminar antes de moverlos: ' + framesToMove.length);
 		var framesUpdated = controller.dirToMove(way,framesToMove);
-		console.log('Frames para eliminar despues de moverlos: ' + framesToMove.length);
 
 		if(framesToMove.length==0 && framesUpdated.length==0){
 				/*if(TodoLleno){
