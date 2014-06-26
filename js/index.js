@@ -97,9 +97,8 @@ var moveFrames = function(way,controller,view,grid){
 					Juego ha terminado
 				}*/
 		}else{
-			controller.addFrame();
+			controller.addFrame(way);
 		}
-		
 		view.rePaint(framesToMove,framesUpdated);
 
 };
