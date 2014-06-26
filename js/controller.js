@@ -145,25 +145,20 @@ Controller.prototype.dirToMove = function(way,framesRemove){
 };
 
 Controller.prototype.addFrame = function(way){
-	var ran;
-	var limit;
+	/*
+	var ran = [];
 	if(way=='right'){
-		ran = 0;
-		limit = 13;
+		ran = [0,1,4,5,8,9,12,13]
 	}else if(way=='left'){
-		ran = 2;
-		limit = 13;
+		ran = [2,3,6,7,10,11,14,15];
 	}else if(way=='up'){
-		ran = 8;
-		limit = 8;
+		ran = [8,9,10,11,12,13,14,15];
 	}else if(way=='down'){
-		ran = 0;
-		limit = 8;
+		ran = [0,1,2,3,4,5,6,7];
 	}
-
+	*/
 	do{
-		var number = Math.floor(Math.random() * limit + ran);
-		console.log(number);
+		var number = Math.floor(Math.random() * 8);
 	}while(!this.grid.frames[number].isEmpty());
 
 	this.view.paint(this.grid.frames[number],'html','2',true);

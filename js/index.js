@@ -92,6 +92,7 @@ var moveFrames = function(way,controller,view,grid){
 		var framesToMove = controller.move();
 		var framesUpdated = controller.dirToMove(way,framesToMove);
 
+		view.rePaint(framesToMove,framesUpdated);
 		if(framesToMove.length==0 && framesUpdated.length==0){
 				/*if(TodoLleno){
 					Juego ha terminado
@@ -99,8 +100,6 @@ var moveFrames = function(way,controller,view,grid){
 		}else{
 			controller.addFrame(way);
 		}
-		view.rePaint(framesToMove,framesUpdated);
-
 };
 
 
