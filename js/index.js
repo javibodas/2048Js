@@ -51,6 +51,14 @@ $(document).ready(function() {
 	//Controlador
 	var controller = new Controller(grid,view,score);
 
+	//Check browser
+	/*
+	$('body').append('<div id="browser">' + navigator.platform + '</div>');
+	 if(navigator.platform.indexOf('Linux')>=0){
+	 	console.log('Yeah');
+	 	console.log(navigator.userAgent);
+	 }
+	*/
 	/*--EVENTS--*/
 	$(this.getElementById('reload')).click(function (){
 		load(true,controller);
@@ -61,16 +69,16 @@ $(document).ready(function() {
 		var code = key.which;
 		switch(code){
 			case 37: 
-				moveFrames('left',controller,view,grid);
+				moveFrames('left',controller,view,grid,score);
 				break;
 			case 38: 
-				moveFrames('up',controller,view,grid);
+				moveFrames('up',controller,view,grid,score);
 				break
 			case 39: 
-				moveFrames('right',controller,view,grid);
+				moveFrames('right',controller,view,grid,score);
 				break;
 			case 40: 
-				moveFrames('down',controller,view,grid);
+				moveFrames('down',controller,view,grid,score);
 		}
 	});
 
@@ -87,16 +95,21 @@ var load = function (reload,controller) {
 
 
 
-var moveFrames = function(way,controller,view,grid){
+var moveFrames = function(way,controller,view,grid,score){
 		
 		var framesToMove = controller.move();
 		var framesUpdated = controller.dirToMove(way,framesToMove);
 
 		view.rePaint(framesToMove,framesUpdated);
 		if(framesToMove.length==0 && framesUpdated.length==0){
-				/*if(TodoLleno){
-					Juego ha terminado
-				}*/
+			var framesOcupated = grid.getFramesNoEmpty();
+				if(framesOcupated.length==grid.lines*grid.cols){
+					alert('El juego ha terminado');
+					if(localStorage.getItem('highscore') < score.getValue()){
+						localStorage['highscore'] =  score.getValue();
+					}
+					controller.load(reload);
+				}
 		}else{
 			controller.addFrame(way);
 		}
