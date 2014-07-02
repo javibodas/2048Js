@@ -10,7 +10,7 @@ $(document).ready(function() {
 	/*--CONTENEDORES--*/
 	$('body').html('<div id="container"><div id="grid"></div></div>');
 	$('body').append('<div id="options"></div>');
-	$('body').append('<div id="scores"></div>');
+	$('body').append('<div id="scores"><fieldset id="fieldscor"><legend>Scores:</legend></fieldset></div>');
 	var score = new Score(0);
 
 
@@ -19,20 +19,20 @@ $(document).ready(function() {
 	$(document.getElementById('grid')).html('<table id="table"></table>');
 	
 	//Options
-	$(document.getElementById('options')).append('<div id="reset"><legend>Reset:</legend><img id="reload" src="images/reload.png"></img></div>');
-	$(document.getElementById('options')).append('<div id="dificulty"><legend>Dificulty:</legend></div>');
-	$(document.getElementById('dificulty')).append('<input type="checkbox" id="checkfour" checked="true"></input><img id="por4" src="images/4x4.png"></img>');
-	$(document.getElementById('dificulty')).append('<input type="checkbox" id="checkeight"></input><img id="por8" src="images/8x8.png"></img>');
+	$(document.getElementById('options')).append('<div id="reset"><fieldset><legend>Reset:</legend><img id="reload" src="images/reload.png"></img></fieldset></div>');
+	$(document.getElementById('options')).append('<div id="dificulty"><fieldset id="field"><legend>Dificulty:</legend></fieldset></div>');
+	$(document.getElementById('field')).append('<input type="checkbox" id="checkfour" checked="true"></input><img id="por4" src="images/4x4.png"></img>');
+	$(document.getElementById('field')).append('<input type="checkbox" id="checkeight"></input><img id="por8" src="images/8x8.png"></img>');
 	//Scores
 	/*--SCORES--*/
-	$(document.getElementById('scores')).append('<label id="score">Score: 0</label>');
+	$(document.getElementById('fieldscor')).append('<label id="score">Score: 0</label>');
 	var highscore;
 	if(localStorage['highscore']){
 		highscore = localStorage.getItem('highscore');
 	}else{
 		highscore = 0;
 	}
-	$(document.getElementById('scores')).append('<label id="highscore" >HighScore: '+highscore+'</label>');
+	$(document.getElementById('fieldscor')).append('<label id="highscore" >HighScore: '+highscore+'</label>');
 	//$(document.getElementById('highscore')).append(' ' + highscore);
 	
 	//Grid
@@ -71,7 +71,6 @@ $(document).ready(function() {
 	$(this.getElementById('reload')).click(function (){
 		load(true,controller);
 	});
-
 	$(this).keydown(function(key) {
 
 		var code = key.which;
@@ -87,6 +86,16 @@ $(document).ready(function() {
 				break;
 			case 40: 
 				moveFrames('down',controller,view,grid,score);
+		}
+	});
+	$(this.getElementById('checkfour')).click(function(){
+		if($(document.getElementById('checkfour')).prop('checked')){
+			$(document.getElementById('checkeight')).prop('checked')=false;
+		}
+	});
+	$(this.getElementById('checkeight')).click(function(){
+		if($(document.getElementById('checkeight')).prop('checked')){
+			$(document.getElementById('checkfour')).prop('checked')=false;
 		}
 	});
 
