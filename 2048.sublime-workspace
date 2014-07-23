@@ -204,18 +204,34 @@
 	"buffers":
 	[
 		{
-			"file": "template/map.html",
-			"settings":
-			{
-				"buffer_size": 440,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "js/view.js",
 			"settings":
 			{
 				"buffer_size": 1943,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/index.js",
+			"settings":
+			{
+				"buffer_size": 4600,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 734,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/index.css",
+			"settings":
+			{
+				"buffer_size": 1555,
 				"line_ending": "Unix"
 			}
 		}
@@ -223,9 +239,13 @@
 	"build_system": "Packages/SASS Build/SASS - Compressed.sublime-build",
 	"command_palette":
 	{
-		"height": 159.0,
+		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
 			[
 				"git commit ",
 				"Git: Commit"
@@ -324,6 +344,9 @@
 	},
 	"file_history":
 	[
+		"/home/javier/Git/2048/css/index.css",
+		"/home/javier/Git/2048/js/mobileCheck.js",
+		"/home/javier/Git/2048/template/map.html",
 		"/home/javier/Git/2048/js/view.js",
 		"/home/javier/Git/2048/js/index.js",
 		"/home/javier/Git/Clock/clock.html",
@@ -351,12 +374,10 @@
 		"/home/javier/Git/BackBoneBlogJasonOffutt/BackboneBlog/scripts/routers/BlogRouter.js",
 		"/home/javier/Git/javibodas.github.io/2048/css/index.css",
 		"/home/javier/Git/javibodas.github.io/2048/js/index.js",
-		"/home/javier/Git/2048/css/index.css",
 		"/home/javier/Git/2048/js/controller.js",
 		"/home/javier/Git/Foro/app/css/index.css",
 		"/home/javier/Git/javibodas.github.io/css/todo.css",
 		"/home/javier/Git/2048/js/grid.js",
-		"/home/javier/Git/2048/template/map.html",
 		"/home/javier/Git/Foro/app/js/init.js",
 		"/home/javier/Git/javibodas.github.io/index.html",
 		"/home/javier/Git/2048/js/frame.js",
@@ -450,8 +471,7 @@
 		"/home/javier/Informatica/TercerAño/Sistemas Operativos/PracticasAnalisis/ModuloSinCom/Lector.c",
 		"/home/javier/Libs/Angular/angular.min.js",
 		"/home/javier/Prueba.js",
-		"/home/javier/Escritorio/angular.min.js",
-		"/home/javier/NetBeansProjects/Plumber/src/plumber/PanelTuberias.java"
+		"/home/javier/Escritorio/angular.min.js"
 	],
 	"find":
 	{
@@ -516,18 +536,72 @@
 			[
 				{
 					"buffer": 0,
-					"file": "template/map.html",
+					"file": "js/view.js",
 					"settings":
 					{
-						"buffer_size": 440,
+						"buffer_size": 1943,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								280,
+								280
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/index.js",
+					"settings":
+					{
+						"buffer_size": 4600,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								71,
+								71
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 734,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								207,
+								207
 							]
 						],
 						"settings":
@@ -542,28 +616,28 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "js/view.js",
+					"buffer": 3,
+					"file": "css/index.css",
 					"settings":
 					{
-						"buffer_size": 1943,
+						"buffer_size": 1555,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1185,
-								1185
+								311,
+								311
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 420.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -643,6 +717,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 179.0,
+	"side_bar_width": 228.0,
 	"status_bar_visible": true
 }
