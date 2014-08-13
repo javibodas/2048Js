@@ -11,7 +11,6 @@ $(document).ready(function() {
 	$('body').html('<div id="container"><div id="grid"></div></div>');
 	$('body').append('<div id="options"></div>');
 	$('body').append('<div id="scores"><fieldset id="fieldscor"><legend>Scores:</legend></fieldset></div>');
-	var score = new Score(0);
 
 
 	/*--COMPONENTS--*/
@@ -23,12 +22,15 @@ $(document).ready(function() {
 	$(document.getElementById('options')).append('<div id="dificulty"><fieldset id="field"><legend>Dificulty:</legend></fieldset></div>');
 	$(document.getElementById('field')).append('<input type="checkbox" id="checkfour" checked="true"></input><img id="por4" src="images/4x4.png"></img>');
 	$(document.getElementById('field')).append('<input type="checkbox" id="checkeight"></input><img id="por8" src="images/8x8.png"></img>');
+	
 	//Scores
+	var score = new Score(0);
+	
 	/*--SCORES--*/
 	$(document.getElementById('fieldscor')).append('<label id="score">Score: 0</label>');
 	var highscore;
-	if(localStorage['highscore']){
-		highscore = localStorage.getItem('highscore');
+	if(localStorage['highscore_2048']){
+		highscore = localStorage.getItem('highscore_2048');
 	}else{
 		highscore = 0;
 	}
@@ -38,10 +40,82 @@ $(document).ready(function() {
 	//Grid
 	var grid = new Grid(cols,lines);
 
+	//End Game
+	var end = new EndGame();
+
 	//View 
-	var view = new View(grid);
+	var view = new View(grid,end);
+
+	//Controller
+	var controller = new Controller(grid,view,score);
 
 	//Frames
+	createFrames(grid,lines,cols,controller);
+
+	//Check browser
+	var isMobileBrowser = mobilecheck();
+	console.log(isMobileBrowser);
+	
+	/*--EVENTS--*/
+	//Reload the game
+	$(this.getElementById('reload')).click(function (){
+		load(true,controller);
+	});
+
+	//Moves (Desktop: Keys, Mobile: Swipes)
+	if(isMobileBrowser){
+		$(document.getElementById('grid')).on('swipedown',function(){
+			$('body').append('<label>Hola caracola pajarito sin cola esto funciona</label>');
+		});
+		$(document.getElementById('grid')).on('swipeup',function(){
+			$('body').append('<label>Hola caracola pajarito sin cola esto funciona</label>');
+		});
+		$(document.getElementById('grid')).on('swiperight',function(){
+			moveFrames('right',controller,view,grid,score);
+		});
+		$(document.getElementById('grid')).on('swipeleft',function(){
+			moveFrames('left',controller,view,grid,score);
+		});
+	}else{
+		$(this).keydown(function(key) {
+			var code = key.which;
+			switch(code){
+				case 37: 
+					moveFrames('left',controller,view,grid,score,end);
+					break;
+				case 38: 
+					moveFrames('up',controller,view,grid,score,end);
+					break
+				case 39: 
+					moveFrames('right',controller,view,grid,score,end);
+					break;
+				case 40: 
+					moveFrames('down',controller,view,grid,score,end);
+			}
+		
+		});
+	}
+
+	//Checkbox for table of 4x4
+	$(this.getElementById('checkfour')).click(function(){
+		$(document.getElementById('table')).empty();
+		createFrames(grid,4,4,controller);
+		if($(document.getElementById('checkfour')).prop('checked')){
+			$(document.getElementById('checkeight')).prop('checked',false);
+		}
+	});
+
+	//Checkbox for table of 8x8
+	$(this.getElementById('checkeight')).click(function(){
+		$(document.getElementById('table')).empty();
+		createFrames(grid,8,8,controller);
+		if($(document.getElementById('checkeight')).prop('checked')){
+			$(document.getElementById('checkfour')).prop('checked',false);
+		}
+	});
+});
+
+var createFrames = function(grid,lines,cols,controller){
 	var frames = [];
 	var count= 0;
 	for(var i=0;i<lines;i++){
@@ -55,75 +129,13 @@ $(document).ready(function() {
 		}
 	}
 	grid.frames = frames;
-
-	//Controlador
-	var controller = new Controller(grid,view,score);
-
-	//Check browser
-	var isMobileBrowser = mobilecheck();
-	console.log(isMobileBrowser);
-	/*--EVENTS--*/
-	$(this.getElementById('reload')).click(function (){
-		load(true,controller);
-	});
-
-	if(isMobileBrowser){
-			$(document.getElementById('grid')).on('swipedown',function(){
-				$('body').append('<label>Hola caracola pajarito sin cola esto funciona</label>');
-			});
-			$(document.getElementById('grid')).on('swipeup',function(){
-				$('body').append('<label>Hola caracola pajarito sin cola esto funciona</label>');
-			});
-			$(document.getElementById('grid')).on('swiperight',function(){
-				moveFrames('right',controller,view,grid,score);
-			});
-			$(document.getElementById('grid')).on('swipeleft',function(){
-				moveFrames('left',controller,view,grid,score);
-			});
-	}else{
-		$(this).keydown(function(key) {
-			var code = key.which;
-			switch(code){
-				case 37: 
-					moveFrames('left',controller,view,grid,score);
-					break;
-				case 38: 
-					moveFrames('up',controller,view,grid,score);
-					break
-				case 39: 
-					moveFrames('right',controller,view,grid,score);
-					break;
-				case 40: 
-					moveFrames('down',controller,view,grid,score);
-			}
-		
-		});
-	}
-	$(this.getElementById('checkfour')).click(function(){
-		if($(document.getElementById('checkfour')).prop('checked')){
-			$(document.getElementById('checkeight')).prop('checked')=false;
-		}
-	});
-	$(this.getElementById('checkeight')).click(function(){
-		if($(document.getElementById('checkeight')).prop('checked')){
-			$(document.getElementById('checkfour')).prop('checked')=false;
-		}
-	});
-
-	/*Init frames*/
-	load(false,controller);
-
-});
-
-
-/*Put first twos in grid, or reload the grid*/
-var load = function (reload,controller) {
-		controller.load(reload);
+	controller.load(false);
 };
 
 
 
-var moveFrames = function(way,controller,view,grid,score){
+
+var moveFrames = function(way,controller,view,grid,score,end){
 		
 		var framesToMove = controller.move();
 		var framesUpdated = controller.dirToMove(way,framesToMove);
@@ -131,20 +143,23 @@ var moveFrames = function(way,controller,view,grid,score){
 		view.rePaint(framesToMove,framesUpdated);
 		if(framesToMove.length == 0 && framesUpdated.length == 0){
 			var framesOcupated = grid.getFramesNoEmpty();
-				if(framesOcupated.length == grid.lines*grid.cols){
-					if(!grid.isPosibleToMoveSomething()){
-						alert('El juego ha terminado');
-						if(localStorage.getItem('highscore') < score.getValue()){
-							localStorage['highscore'] =  score.getValue();
-						}
-						controller.load(reload);
+			if(framesOcupated.length == grid.lines*grid.cols){
+				if(!grid.isPosibleToMoveSomething()){
+					alert('El juego ha terminado');
+					if(localStorage.getItem('highscore_2048') < score.getValue()){
+						localStorage['highscore_2048'] =  score.getValue();
 					}
+					controller.load(reload);
 				}
+			}
 		}else{
 			controller.addFrame(way);
 		}
-};
 
+		if(end.getEnd()){
+			end.endGame();
+		}
+};
 
 
 

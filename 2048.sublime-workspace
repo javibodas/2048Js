@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"end",
+				"end"
+			],
+			[
 				"hour",
 				"hourMinute"
 			],
@@ -207,7 +211,15 @@
 			"file": "js/view.js",
 			"settings":
 			{
-				"buffer_size": 1943,
+				"buffer_size": 1960,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/endgame.js",
+			"settings":
+			{
+				"buffer_size": 100,
 				"line_ending": "Unix"
 			}
 		},
@@ -215,7 +227,7 @@
 			"file": "js/index.js",
 			"settings":
 			{
-				"buffer_size": 4600,
+				"buffer_size": 4669,
 				"line_ending": "Unix"
 			}
 		},
@@ -232,6 +244,14 @@
 			"settings":
 			{
 				"buffer_size": 1555,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/frame.js",
+			"settings":
+			{
+				"buffer_size": 752,
 				"line_ending": "Unix"
 			}
 		}
@@ -344,6 +364,7 @@
 	},
 	"file_history":
 	[
+		"/home/javier/Git/2048/js/endgame.js",
 		"/home/javier/Git/2048/css/index.css",
 		"/home/javier/Git/2048/js/mobileCheck.js",
 		"/home/javier/Git/2048/template/map.html",
@@ -470,8 +491,7 @@
 		"/home/javier/Libs/BootsTrap/bootstrap-3.1.1-dist/js/bootstrap.min.js",
 		"/home/javier/Informatica/TercerAño/Sistemas Operativos/PracticasAnalisis/ModuloSinCom/Lector.c",
 		"/home/javier/Libs/Angular/angular.min.js",
-		"/home/javier/Prueba.js",
-		"/home/javier/Escritorio/angular.min.js"
+		"/home/javier/Prueba.js"
 	],
 	"find":
 	{
@@ -531,7 +551,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -539,15 +559,15 @@
 					"file": "js/view.js",
 					"settings":
 					{
-						"buffer_size": 1943,
+						"buffer_size": 1960,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								280,
-								280
+								1214,
+								1214
 							]
 						],
 						"settings":
@@ -563,24 +583,23 @@
 				},
 				{
 					"buffer": 1,
-					"file": "js/index.js",
+					"file": "js/endgame.js",
 					"settings":
 					{
-						"buffer_size": 4600,
+						"buffer_size": 100,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								71,
-								71
+								98,
+								98
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -590,6 +609,33 @@
 				},
 				{
 					"buffer": 2,
+					"file": "js/index.js",
+					"settings":
+					{
+						"buffer_size": 4669,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4657,
+								4657
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1525.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "index.html",
 					"settings":
 					{
@@ -616,7 +662,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "css/index.css",
 					"settings":
 					{
@@ -634,6 +680,33 @@
 						"settings":
 						{
 							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "js/frame.js",
+					"settings":
+					{
+						"buffer_size": 752,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,

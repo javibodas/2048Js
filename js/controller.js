@@ -35,16 +35,17 @@ Controller.prototype.load = function(reload){
 	this.view.paint(this.grid.frames[number2],'html','2',false);
 	this.view.paint(this.grid.frames[number2],'css','background-color','orange',false);
 	this.grid.setValueFrame(number2, '2');
+	
 	/*
 	//Tests
 	
-	this.view.paint(this.grid.frames[0],'html','4');
+	this.view.paint(this.grid.frames[0],'html','1024');
 	this.view.paint(this.grid.frames[0],'css','background-color','orange');
-	this.grid.frames[0].val = '4';
+	this.grid.frames[0].val = '1024';
 	
-	this.view.paint(this.grid.frames[4],'html','2');
+	this.view.paint(this.grid.frames[4],'html','1024');
 	this.view.paint(this.grid.frames[4],'css','background-color','orange');
-	this.grid.frames[4].val = '2';
+	this.grid.frames[4].val = '1024';
 
 	this.view.paint(this.grid.frames[8],'html','2');
 	this.view.paint(this.grid.frames[8],'css','background-color','orange');
@@ -104,8 +105,8 @@ Controller.prototype.load = function(reload){
 	this.view.paint(this.grid.frames[13],'html','4');
 	this.view.paint(this.grid.frames[13],'css','background-color','orange');
 	this.grid.frames[13].val = '4';
-	*/
 	
+	*/
 	grid = this.grid;
 	view = this.view;
 	score = this.score;
