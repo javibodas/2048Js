@@ -3,6 +3,11 @@ body{
 	background-color: #F5ECCE;
 }
 
+div{
+	margin-right: 20px;
+	margin-bottom:20px;
+}
+
 
 /*-----------------------------*/
 /*---------- GRID -------------*/
@@ -57,8 +62,17 @@ body{
 	color:green;
 	font-family: cursive;
 }
+#dificulty input[type="checkbox"]{
+	display:none;
+} 
+#dificulty img:hover{
+	box-shadow: 0px 0px 2px 2px black;
+}
+.imgchecked{
+	box-shadow: 0px 0px 1px 1px black;
+}
 #dificulty img{
-	margin-right: 7px;
+	margin-right: 17px;
 }
 #dificulty #por4{
 	width: 50px;
@@ -70,7 +84,7 @@ body{
 }
 #dificulty #field{
 	border:2px solid #6F1EAB;
-	width:35%;
+	width:30%;
 }
 
 /*-----------------------------*/
@@ -84,7 +98,7 @@ body{
 }
 #scores #fieldscor{
 	border:2px solid #6F1EAB;
-	width:55%;
+	width:51%;
 }
 #scores label{
 	margin-right: 20px;
@@ -113,9 +127,4 @@ body{
   width: 45px;
   height: 45px;
   background-color: #C6A664;
-}
-
-div{
-	margin-right: 20px;
-	margin-bottom:20px;
 }

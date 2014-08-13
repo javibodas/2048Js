@@ -329,48 +329,48 @@ var moveNegative = function(frame,pos,way,length,score){
 
 	var o = new Object();
 	for(var i = pos - 1;i>=0;i--){
-			if(i==0 && positionsOcupated[i]==false){
-				positionsOcupated[i] = true;
+		if(i==0 && positionsOcupated[i]==false){
+			positionsOcupated[i] = true;
+			positionsOcupated[pos] = false;
+			if(way=='left'){
+				o['pos'] = frame.line*frame.grid.cols + i;
+			}else if(way=='up'){
+				o['pos'] = frame.col + frame.grid.lines*i;
+			}
+			o['value'] = frame.val; 
+			return o;
+		}
+		if(positionsOcupated[i]==false){
+			continue;
+		}else{
+			if(way=='left'){
+				var framePosInI = frame.grid.getFrame(i,'line',frame.line);
+			}else{
+				var framePosInI = frame.grid.getFrame(i,'col',frame.col);
+			}
+			var valPosInI = framePosInI.val;
+			if(parseInt(frame.val)==valPosInI){
 				positionsOcupated[pos] = false;
-				if(way=='left'){
-					o['pos'] = frame.line*frame.grid.cols + i;
-				}else if(way=='up'){
-					o['pos'] = frame.col + frame.grid.lines*i;
+				o['pos'] = framePosInI.pos;
+				o['value'] = String(parseInt(frame.val)*2);
+				score.setValue(score.getValue() + parseInt(o.value));
+				return o;
+			}else{
+				positionsOcupated[i+1] = true;
+				if(pos!=i+1){
+					positionsOcupated[pos] = false;
 				}
-				o['value'] = frame.val; 
+				if(way=='left'){
+					var frameFree = grid.getFrame(i+1,'line',frame.line);
+					o['pos'] = frame.line*frame.grid.cols + (i+1);
+				}else{
+					var frameFree = grid.getFrame(i+1,'col',frame.col);
+					o['pos'] = frame.col + frame.grid.lines*(i+1);
+				}
+				o['value'] = frame.val;
 				return o;
 			}
-			if(positionsOcupated[i]==false){
-				continue;
-			}else{
-				if(way=='left'){
-					var framePosInI = frame.grid.getFrame(i,'line',frame.line);
-				}else{
-					var framePosInI = frame.grid.getFrame(i,'col',frame.col);
-				}
-				var valPosInI = framePosInI.val;
-				if(parseInt(frame.val)==valPosInI){
-					positionsOcupated[pos] = false;
-					o['pos'] = framePosInI.pos;
-					o['value'] = String(parseInt(frame.val)*2);
-					score.setValue(score.getValue() + parseInt(o.value));
-					return o;
-				}else{
-					positionsOcupated[i+1] = true;
-					if(pos!=i+1){
-						positionsOcupated[pos] = false;
-					}
-					if(way=='left'){
-						var frameFree = grid.getFrame(i+1,'line',frame.line);
-						o['pos'] = frame.line*frame.grid.cols + (i+1);
-					}else{
-						var frameFree = grid.getFrame(i+1,'col',frame.col);
-						o['pos'] = frame.col + frame.grid.lines*(i+1);
-					}
-					o['value'] = frame.val;
-					return o;
-				}
-			}
 		}
+	}
 
 };

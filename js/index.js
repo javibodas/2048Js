@@ -27,7 +27,7 @@ $(document).ready(function() {
 	//Options
 	$(document.getElementById('options')).append('<div id="reset"><fieldset><legend>Reset:</legend><img id="reload" src="images/reload.png"></img></fieldset></div>');
 	$(document.getElementById('options')).append('<div id="dificulty"><fieldset id="field"><legend>Dificulty:</legend></fieldset></div>');
-	$(document.getElementById('field')).append('<input type="checkbox" id="checkfour" checked="true"></input><img id="por4" src="images/4x4.png"></img>');
+	$(document.getElementById('field')).append('<input type="checkbox" id="checkfour" checked="true"></input><img id="por4" class="imgchecked" src="images/4x4.png"></img>');
 	$(document.getElementById('field')).append('<input type="checkbox" id="checkeight"></input><img id="por8" src="images/8x8.png"></img>');
 	
 	//Scores
@@ -105,26 +105,36 @@ $(document).ready(function() {
 		});
 	}
 
-	//CHECKBOX FOR TABLE 4X4
-	$(this.getElementById('checkfour')).click(function(){
+	//CHECK FOR TABLE 4X4
+	$(this.getElementById('por4')).click(function(){
 		var eight = 8;
 		$(document.getElementById('grid')).removeClass('grid' + eight.toString());
 		$(document.getElementById('table')).empty();
+		
 		createFrames(grid,4,4,controller);
-		if($(document.getElementById('checkfour')).prop('checked')){
+		
+		$(document.getElementById('por4')).addClass('imgchecked');
+		if($(document.getElementById('checkeight')).prop('checked')){
 			$(document.getElementById('checkeight')).prop('checked',false);
+			$(document.getElementById('por8')).removeClass('imgchecked');
 		}
+		$(document.getElementById('checkfour')).prop('checked',true);
 	});
 
-	//CHECKBOX FOR TABLE 8X8
-	$(this.getElementById('checkeight')).click(function(){
+	//CHECK FOR TABLE 8X8
+	$(this.getElementById('por8')).click(function(){
 		var four = 4;
 		$(document.getElementById('grid')).removeClass('grid' + four.toString());
 		$(document.getElementById('table')).empty();
+		
 		createFrames(grid,8,8,controller);
-		if($(document.getElementById('checkeight')).prop('checked')){
+		
+		$(document.getElementById('por8')).addClass('imgchecked');
+		if($(document.getElementById('checkfour')).prop('checked')){
 			$(document.getElementById('checkfour')).prop('checked',false);
+			$(document.getElementById('por4')).removeClass('imgchecked');
 		}
+		$(document.getElementById('checkeight')).prop('checked',true);
 	});
 });
 
