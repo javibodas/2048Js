@@ -54,10 +54,10 @@ View.prototype = {
 			
 				switch(this.value){
 					case '2': colorBackground = 'orange'; break;
-					case '4': colorBackground = 'blue'; break;
-					case '8': colorBackground = 'green'; break;
-					case '16': colorBackground = 'black'; break;
-					case '32': colorBackground = 'grey'; break;
+					case '4': colorBackground = '#A34900'; break;
+					case '8': colorBackground = '#350000'; break;
+					case '16': colorBackground = '#600000'; break;
+					case '32': colorBackground = '#F99999'; break;
 					case '64': colorBackground = 'brown'; break;
 					case '128': colorBackground = 'yellow'; break;
 					case '256': colorBackground = 'white'; break;
