@@ -4,8 +4,17 @@ var EndGame = function(){
 
 EndGame.prototype = {
 
-	endGame : function(){
+	endGameGood : function(){
 		alert('Congratulations has ganado');
+	},
+	endGameBad : function(mode){
+						
+		alert('El juego ha terminado');
+		var high = localStorage.getItem('highscore_2048');
+		var hscore = high && JSON.parse(high);	
+		if(hscore[mode.getMode()] < score.getValue()){
+			localStorage['highscore_2048'][mode.mode] =  score.getValue();
+		}		
 	},
 
 	setEnd : function(end){

@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"hi",
+				"highscore_2048"
+			],
+			[
+				"high",
+				"highscore_2048"
+			],
+			[
+				"hig",
+				"high"
+			],
+			[
+				"mode",
+				"modegame"
+			],
+			[
+				"img",
+				"imgchecked"
+			],
+			[
+				"che",
+				"checkbox"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
 				"end",
 				"end"
 			],
@@ -208,34 +236,26 @@
 	"buffers":
 	[
 		{
-			"file": "js/view.js",
-			"settings":
-			{
-				"buffer_size": 1960,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "js/endgame.js",
-			"settings":
-			{
-				"buffer_size": 100,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "js/index.js",
 			"settings":
 			{
-				"buffer_size": 4669,
+				"buffer_size": 6189,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "index.html",
+			"file": "js/modegame.js",
 			"settings":
 			{
-				"buffer_size": 734,
+				"buffer_size": 177,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/view.js",
+			"settings":
+			{
+				"buffer_size": 2036,
 				"line_ending": "Unix"
 			}
 		},
@@ -243,15 +263,23 @@
 			"file": "css/index.css",
 			"settings":
 			{
-				"buffer_size": 1555,
+				"buffer_size": 1965,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "js/frame.js",
+			"file": "js/controller.js",
 			"settings":
 			{
-				"buffer_size": 752,
+				"buffer_size": 10348,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 859,
 				"line_ending": "Unix"
 			}
 		}
@@ -364,16 +392,20 @@
 	},
 	"file_history":
 	[
-		"/home/javier/Git/2048/js/endgame.js",
 		"/home/javier/Git/2048/css/index.css",
+		"/home/javier/Git/2048/js/score.js",
+		"/home/javier/Git/2048/index.html",
+		"/home/javier/Git/2048/js/view.js",
+		"/home/javier/Git/2048/js/controller.js",
+		"/home/javier/Git/2048/js/endgame.js",
+		"/home/javier/Git/2048/js/grid.js",
+		"/home/javier/Git/2048/js/frame.js",
+		"/home/javier/Git/2048/js/index.js",
 		"/home/javier/Git/2048/js/mobileCheck.js",
 		"/home/javier/Git/2048/template/map.html",
-		"/home/javier/Git/2048/js/view.js",
-		"/home/javier/Git/2048/js/index.js",
 		"/home/javier/Git/Clock/clock.html",
 		"/home/javier/Git/Clock/clock.css",
 		"/home/javier/Git/Clock/clock.js",
-		"/home/javier/Git/2048/index.html",
 		"/home/javier/Git/Foro/app/scss/links.scss",
 		"/home/javier/Git/Foro/app/scss/input.scss",
 		"/home/javier/Git/Foro/app/scss/foro.scss",
@@ -395,17 +427,13 @@
 		"/home/javier/Git/BackBoneBlogJasonOffutt/BackboneBlog/scripts/routers/BlogRouter.js",
 		"/home/javier/Git/javibodas.github.io/2048/css/index.css",
 		"/home/javier/Git/javibodas.github.io/2048/js/index.js",
-		"/home/javier/Git/2048/js/controller.js",
 		"/home/javier/Git/Foro/app/css/index.css",
 		"/home/javier/Git/javibodas.github.io/css/todo.css",
-		"/home/javier/Git/2048/js/grid.js",
 		"/home/javier/Git/Foro/app/js/init.js",
 		"/home/javier/Git/javibodas.github.io/index.html",
-		"/home/javier/Git/2048/js/frame.js",
 		"/home/javier/Git/Foro/app/templates/jade/registro.jade",
 		"/home/javier/Git/Foro/app/templates/html/registro.html",
 		"/home/javier/Git/javibodas.github.io/foro/index.html",
-		"/home/javier/Git/2048/js/score.js",
 		"/home/javier/Git/Foro/app/scss/foot.scss",
 		"/home/javier/.cache/.fr-sbi0gX/d3.js",
 		"/home/javier/Git/Foro/app/scss/mixins.scss",
@@ -556,18 +584,18 @@
 			[
 				{
 					"buffer": 0,
-					"file": "js/view.js",
+					"file": "js/index.js",
 					"settings":
 					{
-						"buffer_size": 1960,
+						"buffer_size": 6189,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1214,
-								1214
+								1726,
+								1726
 							]
 						],
 						"settings":
@@ -576,25 +604,25 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 351.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "js/endgame.js",
+					"file": "js/modegame.js",
 					"settings":
 					{
-						"buffer_size": 100,
+						"buffer_size": 177,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								98,
-								98
+								172,
+								172
 							]
 						],
 						"settings":
@@ -609,50 +637,23 @@
 				},
 				{
 					"buffer": 2,
-					"file": "js/index.js",
+					"file": "js/view.js",
 					"settings":
 					{
-						"buffer_size": 4669,
+						"buffer_size": 2036,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4657,
-								4657
+								648,
+								648
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1525.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "index.html",
-					"settings":
-					{
-						"buffer_size": 734,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								207,
-								207
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -662,24 +663,50 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "css/index.css",
 					"settings":
 					{
-						"buffer_size": 1555,
+						"buffer_size": 1965,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								311,
-								311
+								716,
+								716
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 351.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "js/controller.js",
+					"settings":
+					{
+						"buffer_size": 10348,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								410,
+								410
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -690,23 +717,23 @@
 				},
 				{
 					"buffer": 5,
-					"file": "js/frame.js",
+					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 752,
+						"buffer_size": 859,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								705,
+								705
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
