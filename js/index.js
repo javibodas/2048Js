@@ -4,9 +4,9 @@ $(document).ready(function() {
 /*-------------------*/
 /*----MODE GAME------*/
 /*-------------------*/
-	var modegame = new ModeGame('4x4');
 	var cols = 4;
 	var lines = 4;
+	var modegame = new ModeGame(lines + 'x' + cols);//4x4
 	//$('body').load('template/map.html');
 
 /*-------------------*/
@@ -42,6 +42,7 @@ $(document).ready(function() {
 		if(localStorage['highscore_2048']){
 			var aux = localStorage.getItem('highscore_2048');
 			highscore = aux && JSON.parse(aux);
+			console.log(aux);
 		}else{
 			highscore = {
 				'4x4': 0,
@@ -207,6 +208,7 @@ var moveFrames = function(way,controller,view,grid,score,end,mode){
 		if(framesOcupated.length == grid.lines*grid.cols){//Grid full
 			if(!grid.isPosibleToMoveSomething()){
 				end.endGameBad(mode);
+				alert('El juego ha terminado');
 				controller.load(reload);
 			}
 		}
