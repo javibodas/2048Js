@@ -259,7 +259,7 @@
 			"file": "css/index.css",
 			"settings":
 			{
-				"buffer_size": 1967,
+				"buffer_size": 1966,
 				"line_ending": "Unix"
 			}
 		}
@@ -559,7 +559,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -621,15 +621,15 @@
 					"file": "css/index.css",
 					"settings":
 					{
-						"buffer_size": 1967,
+						"buffer_size": 1966,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								60,
-								60
+								34,
+								34
 							]
 						],
 						"settings":

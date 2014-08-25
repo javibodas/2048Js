@@ -12,7 +12,7 @@ EndGame.prototype = {
 		var hscore = high && JSON.parse(high);	
 		if(hscore[mode.getMode()] < score.getValue()){
 			hscore[mode.getMode()] = score.getValue();
-			localStorage.setItem('highscore_2048',JSON.stringify(highscore));
+			localStorage.setItem('highscore_2048',JSON.stringify(hscore));
 		}		
 	},
 
