@@ -243,7 +243,7 @@
 			"file": "js/index.js",
 			"settings":
 			{
-				"buffer_size": 6769,
+				"buffer_size": 6424,
 				"line_ending": "Unix"
 			}
 		},
@@ -251,7 +251,7 @@
 			"file": "js/endgame.js",
 			"settings":
 			{
-				"buffer_size": 535,
+				"buffer_size": 532,
 				"line_ending": "Unix"
 			}
 		},
@@ -372,12 +372,12 @@
 	},
 	"file_history":
 	[
+		"/home/javier/Git/2048/index.html",
 		"/home/javier/Git/2048/js/endgame.js",
 		"/home/javier/Git/2048/js/controller.js",
 		"/home/javier/Git/2048/js/modegame.js",
 		"/home/javier/Git/2048/js/view.js",
 		"/home/javier/Git/2048/css/index.css",
-		"/home/javier/Git/2048/index.html",
 		"/home/javier/Git/2048/js/score.js",
 		"/home/javier/Git/2048/js/grid.js",
 		"/home/javier/Git/2048/js/frame.js",
@@ -567,15 +567,15 @@
 					"file": "js/index.js",
 					"settings":
 					{
-						"buffer_size": 6769,
+						"buffer_size": 6424,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6640,
-								6640
+								2836,
+								2836
 							]
 						],
 						"settings":
@@ -584,7 +584,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 702.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -594,15 +594,15 @@
 					"file": "js/endgame.js",
 					"settings":
 					{
-						"buffer_size": 535,
+						"buffer_size": 532,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								484,
-								484
+								419,
+								419
 							]
 						],
 						"settings":
