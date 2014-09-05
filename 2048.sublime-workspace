@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"frames",
+				"framesPaint"
+			],
+			[
+				"grid",
+				"grid8"
+			],
+			[
 				"HIG",
 				"highscore"
 			],
@@ -240,26 +248,43 @@
 	"buffers":
 	[
 		{
+			"file": "js/controller.js",
+			"settings":
+			{
+				"buffer_size": 9392,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/spec/SpecController.js",
+			"settings":
+			{
+				"buffer_size": 529,
+				"line_ending": "Windows",
+				"name": "describe('Controller', function(){"
+			}
+		},
+		{
+			"file": "test/test.html",
+			"settings":
+			{
+				"buffer_size": 1381,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/grid.js",
+			"settings":
+			{
+				"buffer_size": 3106,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "js/index.js",
 			"settings":
 			{
-				"buffer_size": 6424,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "js/endgame.js",
-			"settings":
-			{
-				"buffer_size": 532,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "css/index.css",
-			"settings":
-			{
-				"buffer_size": 1966,
+				"buffer_size": 7294,
 				"line_ending": "Unix"
 			}
 		}
@@ -270,6 +295,10 @@
 		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"Pac",
+				"Package Control: Install Package"
+			],
 			[
 				"ins",
 				"Package Control: Install Package"
@@ -355,7 +384,7 @@
 				"Package Control: Discover Packages"
 			]
 		],
-		"width": 467.0
+		"width": 416.0
 	},
 	"console":
 	{
@@ -372,6 +401,22 @@
 	},
 	"file_history":
 	[
+		"/D/Git/2048/js/index.js",
+		"/D/Git/2048/js/score.js",
+		"/D/Git/2048/js/view.js",
+		"/D/Git/2048/js/endgame.js",
+		"/D/Git/2048/js/modegame.js",
+		"/D/Git/2048/js/grid.js",
+		"/D/Git/2048/test/spec/SpecFrame.js",
+		"/D/Git/2048/test/spec/SpecView.js",
+		"/D/Git/2048/js/frame.js",
+		"/D/Librerías/Web/Javascript/Testing/jasmine-standalone-2.0.2/spec/PlayerSpec.js",
+		"/D/Git/2048/index.html",
+		"/D/Git/2048/test/jasmine-2.0.2/boot.js",
+		"/D/Librerías/Web/Javascript/Testing/jasmine-standalone-2.0.2/SpecRunner.html",
+		"/C/xampp/htdocs/Hola.html",
+		"/D/Git/2048/js/mobileCheck.js",
+		"/D/Git/2048/css/index.css",
 		"/home/javier/Git/2048/index.html",
 		"/home/javier/Git/2048/js/endgame.js",
 		"/home/javier/Git/2048/js/controller.js",
@@ -483,23 +528,7 @@
 		"/home/javier/Git/JuegoJS/index.js",
 		"/home/javier/Git/javibodas.github.io/stylesheets/stylesheet.css",
 		"/home/javier/Git/javibodas.github.io/stylesheets/pygment_trac.css",
-		"/home/javier/Git/Foro/public/scss/variables.scss",
-		"/home/javier/Informatica/TercerAño/Programación para Sistemas(Aprobada)/pps/tarea-2.3.2013-2014/factores.c",
-		"/home/javier/Libs/Jquery/jquery/src/jquery.js",
-		"/home/javier/Git/Foro/app/css/index.scss",
-		"/home/javier/Informatica/TercerAño/Inteligencia Artificial/Practica/CD/IA/src/ia/Fondo.java",
-		"/home/javier/Git/Foro/app/package.json",
-		"/home/javier/Git/Editor/JavEditor/src/JavEditor/JavEditor.java",
-		"/home/javier/Informatica/TercerAño/Programación para Sistemas(Aprobada)/pps/tarea-2.3.2013-2014/factores",
-		"/home/javier/Escritorio/Prueba.c",
-		"/home/javier/Libs/Backbone/Backbone-min.js",
-		"/home/javier/Libs/Backbone/Backbone.js",
-		"/opt/lampp/htdocs/PruebaJS/MenuPrincipal.html",
-		"/opt/lampp/htdocs/PruebaJS/index.jsp",
-		"/home/javier/Libs/BootsTrap/bootstrap-3.1.1-dist/js/bootstrap.js",
-		"/home/javier/Libs/BootsTrap/bootstrap-3.1.1-dist/js/bootstrap.min.js",
-		"/home/javier/Informatica/TercerAño/Sistemas Operativos/PracticasAnalisis/ModuloSinCom/Lector.c",
-		"/home/javier/Libs/Angular/angular.min.js"
+		"/home/javier/Git/Foro/public/scss/variables.scss"
 	],
 	"find":
 	{
@@ -517,6 +546,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"js",
+			"\"",
 			"<div",
 			"label",
 			"class=\"inpt inpt-form\"",
@@ -559,50 +590,23 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "js/index.js",
+					"file": "js/controller.js",
 					"settings":
 					{
-						"buffer_size": 6424,
+						"buffer_size": 9392,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2836,
-								2836
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 702.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "js/endgame.js",
-					"settings":
-					{
-						"buffer_size": 532,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								419,
-								419
+								907,
+								907
 							]
 						],
 						"settings":
@@ -617,24 +621,107 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "css/index.css",
+					"buffer": 1,
+					"file": "test/spec/SpecController.js",
 					"settings":
 					{
-						"buffer_size": 1966,
+						"buffer_size": 529,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								34,
-								34
+								432,
+								432
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
+							"auto_name": "describe('Controller', function(){",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "test/test.html",
+					"settings":
+					{
+						"buffer_size": 1381,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1333,
+								1333
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/grid.js",
+					"settings":
+					{
+						"buffer_size": 3106,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								590,
+								590
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 135.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "js/index.js",
+					"settings":
+					{
+						"buffer_size": 7294,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6222,
+								6222
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -708,7 +795,7 @@
 		[
 			[
 				"",
-				"/home/javier/sublime-packages/JuegoJs.sublime-project"
+				"/D/Git/2048/2048.sublime-project"
 			]
 		],
 		"width": 380.0

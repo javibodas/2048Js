@@ -128,3 +128,15 @@ div{
   height: 45px;
   background-color: #C6A664;
 }
+
+@media (max-width: 50em){
+	.grid4{
+		width:75%;
+	}
+	.frame4{
+	}
+
+	.grid8{
+		width:75%;
+	}	
+}

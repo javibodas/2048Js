@@ -79,7 +79,7 @@ $(document).ready(function() {
 /*-------EVENTS------*/
 /*-------------------*/
 
-	var tableGame = document.getElementById('grid');
+	var tableGame = $('body');
 	var hammertime = new Hammer(tableGame);
 
 	//RELOAD THE GAME
@@ -91,6 +91,15 @@ $(document).ready(function() {
 	if(isMobileBrowser){
 		hammertime.on('swipeleft', function(){
 			moveFrames('left',controller,view,grid,score,end,modegame);
+		});
+		hammertime.on('swiperight', function(){
+			moveFrames('right',controller,view,grid,score,end,modegame);
+		});
+		hammertime.on('swipeup', function(){
+			moveFrames('up',controller,view,grid,score,end,modegame);
+		});
+		hammertime.on('swipedown', function(){
+			moveFrames('down',controller,view,grid,score,end,modegame);
 		});
 		
 	}else{
@@ -167,7 +176,14 @@ $(document).ready(function() {
 });
 
 
-//MAKE FRAMES AND PUT THEM IN THE TABLE
+/**
+ * [createFrames description]
+ * @param  {[type]} grid       [description]
+ * @param  {[type]} lines      [description]
+ * @param  {[type]} cols       [description]
+ * @param  {[type]} controller [description]
+ * @return {[type]}            [description]
+ */
 var createFrames = function(grid,lines,cols,controller){
 	$(document.getElementById('grid')).addClass('grid' + cols.toString());
 	var frames = [];
@@ -189,7 +205,17 @@ var createFrames = function(grid,lines,cols,controller){
 };
 
 
-// CALL TO THE CONTROLLER FOR THE LOGIC OF THE GAME
+/**
+ * [moveFrames description]
+ * @param  {[type]} way        [description]
+ * @param  {[type]} controller [description]
+ * @param  {[type]} view       [description]
+ * @param  {[type]} grid       [description]
+ * @param  {[type]} score      [description]
+ * @param  {[type]} end        [description]
+ * @param  {[type]} mode       [description]
+ * @return {[type]}            [description]
+ */
 var moveFrames = function(way,controller,view,grid,score,end,mode){
 		
 	var framesToMove = controller.move();4348
@@ -208,7 +234,7 @@ var moveFrames = function(way,controller,view,grid,score,end,mode){
 			}
 		}
 	}else{
-		controller.addFrame(way);
+		controller.addFrame();
 	}
 
 	if(end.getEnd()){
