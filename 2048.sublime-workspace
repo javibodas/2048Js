@@ -4,8 +4,24 @@
 		"selected_items":
 		[
 			[
+				"possib",
+				"possibility"
+			],
+			[
+				"re",
+				"resultFrame"
+			],
+			[
 				"frames",
-				"framesPaint"
+				"framesPainted"
+			],
+			[
+				"second",
+				"secondPosition"
+			],
+			[
+				"first",
+				"firstPosition"
 			],
 			[
 				"grid",
@@ -256,35 +272,34 @@
 			}
 		},
 		{
-			"file": "test/spec/SpecController.js",
-			"settings":
-			{
-				"buffer_size": 529,
-				"line_ending": "Windows",
-				"name": "describe('Controller', function(){"
-			}
-		},
-		{
 			"file": "test/test.html",
 			"settings":
 			{
-				"buffer_size": 1381,
+				"buffer_size": 1447,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "js/grid.js",
+			"file": "test/spec/SpecGrid.js",
 			"settings":
 			{
-				"buffer_size": 3106,
-				"line_ending": "Unix"
+				"buffer_size": 1534,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "js/index.js",
+			"file": "test/spec/SpecController.js",
 			"settings":
 			{
-				"buffer_size": 7294,
+				"buffer_size": 2431,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/frame.js",
+			"settings":
+			{
+				"buffer_size": 752,
 				"line_ending": "Unix"
 			}
 		}
@@ -401,19 +416,20 @@
 	},
 	"file_history":
 	[
-		"/D/Git/2048/js/index.js",
-		"/D/Git/2048/js/score.js",
-		"/D/Git/2048/js/view.js",
-		"/D/Git/2048/js/endgame.js",
-		"/D/Git/2048/js/modegame.js",
 		"/D/Git/2048/js/grid.js",
+		"/D/Git/2048/js/index.js",
+		"/D/Git/2048/js/endgame.js",
+		"/D/Git/2048/test/spec/SpecController.js",
 		"/D/Git/2048/test/spec/SpecFrame.js",
-		"/D/Git/2048/test/spec/SpecView.js",
+		"/D/Git/2048/js/view.js",
 		"/D/Git/2048/js/frame.js",
+		"/D/Librerías/Web/Javascript/Testing/jasmine-standalone-2.0.2/SpecRunner.html",
+		"/D/Git/2048/js/score.js",
+		"/D/Git/2048/js/modegame.js",
+		"/D/Git/2048/test/spec/SpecView.js",
 		"/D/Librerías/Web/Javascript/Testing/jasmine-standalone-2.0.2/spec/PlayerSpec.js",
 		"/D/Git/2048/index.html",
 		"/D/Git/2048/test/jasmine-2.0.2/boot.js",
-		"/D/Librerías/Web/Javascript/Testing/jasmine-standalone-2.0.2/SpecRunner.html",
 		"/C/xampp/htdocs/Hola.html",
 		"/D/Git/2048/js/mobileCheck.js",
 		"/D/Git/2048/css/index.css",
@@ -527,8 +543,7 @@
 		"/home/javier/Git/javibodas.github.io/css/stylesheet.css",
 		"/home/javier/Git/JuegoJS/index.js",
 		"/home/javier/Git/javibodas.github.io/stylesheets/stylesheet.css",
-		"/home/javier/Git/javibodas.github.io/stylesheets/pygment_trac.css",
-		"/home/javier/Git/Foro/public/scss/variables.scss"
+		"/home/javier/Git/javibodas.github.io/stylesheets/pygment_trac.css"
 	],
 	"find":
 	{
@@ -590,7 +605,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -605,8 +620,8 @@
 						"selection":
 						[
 							[
-								907,
-								907
+								4250,
+								4250
 							]
 						],
 						"settings":
@@ -622,45 +637,18 @@
 				},
 				{
 					"buffer": 1,
-					"file": "test/spec/SpecController.js",
-					"settings":
-					{
-						"buffer_size": 529,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								432,
-								432
-							]
-						],
-						"settings":
-						{
-							"auto_name": "describe('Controller', function(){",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "test/test.html",
 					"settings":
 					{
-						"buffer_size": 1381,
+						"buffer_size": 1447,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1333,
-								1333
+								1413,
+								1413
 							]
 						],
 						"settings":
@@ -676,19 +664,45 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "js/grid.js",
+					"buffer": 2,
+					"file": "test/spec/SpecGrid.js",
 					"settings":
 					{
-						"buffer_size": 3106,
+						"buffer_size": 1534,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								590,
-								590
+								1529,
+								1529
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 390.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "test/spec/SpecController.js",
+					"settings":
+					{
+						"buffer_size": 2431,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1555,
+								1555
 							]
 						],
 						"settings":
@@ -697,25 +711,25 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 135.0,
+						"translation.y": 480.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "js/index.js",
+					"file": "js/frame.js",
 					"settings":
 					{
-						"buffer_size": 7294,
+						"buffer_size": 752,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6222,
-								6222
+								0,
+								0
 							]
 						],
 						"settings":

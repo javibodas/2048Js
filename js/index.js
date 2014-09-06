@@ -218,7 +218,7 @@ var createFrames = function(grid,lines,cols,controller){
  */
 var moveFrames = function(way,controller,view,grid,score,end,mode){
 		
-	var framesToMove = controller.move();4348
+	var framesToMove = controller.move();
 	var framesUpdated = controller.dirToMove(way,framesToMove);
 
 	view.rePaint(framesToMove,framesUpdated);
