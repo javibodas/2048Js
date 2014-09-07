@@ -42,14 +42,14 @@ describe('Grid', function(){
 	it('should return the right next frame to the indicated frame', function(){
 		var auxFrame = new Frame(2,2,0,'',grid);
 		var resultFrame = grid.getNext(auxFrame,'+','right');
-		expect(resultFrame.pos).toEqual(3);
+		expect(3).toEqual(resultFrame.pos);
 
 		auxFrame.pos = 3;
 		auxFrame.line = 0;
 		auxFrame.col = 3;
 
 		resultFrame = grid.getNext(auxFrame,'+','right');
-		expect(resultFrame.pos).toEqual(4);
+		expect(4).toEqual(resultFrame.pos);
 	});
 
 	/*it('should return false to the possibility to move something when the grid is full and is not possible to join frames', function(){
@@ -58,7 +58,7 @@ describe('Grid', function(){
 
 	it('should return true to the possibility to move something', function(){
 		controller.load(true);
-		expect(grid.isPosibleToMoveSomething()).toEqual(true);
+		expect(true).toEqual(grid.isPosibleToMoveSomething());
 	});
 
 });

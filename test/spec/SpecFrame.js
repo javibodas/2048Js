@@ -8,21 +8,21 @@ describe("Frame", function() {
   beforeEach(function() {});
 
   it('should be empty with val ""', function() {
-    expect(frame.isEmpty()).toEqual(true);
+    expect(true).toEqual(frame.isEmpty());
   });
 
   it('should not be empty with val "2"', function(){
     frame.val = '2';
-    expect(frame.isEmpty()).not.toEqual(true);
+    expect(true).not.toEqual(frame.isEmpty());
   });
 
   it('should stay in final position when the way is "right" and position "7"', function(){
      frame.pos = 7;
-     expect(frame.isFinal('right')).toEqual(true);
+     expect(true).toEqual(frame.isFinal('right'));
   });
 
   it('should not stay in final position when the way is "right" and position "8"', function(){
     frame.pos = 8;
-    expect(frame.isFinal('right')).not.toEqual(true);
+    expect(true).not.toEqual(frame.isFinal('right'));
   });
 });
