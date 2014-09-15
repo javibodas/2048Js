@@ -275,7 +275,7 @@
 			"file": "test/test.html",
 			"settings":
 			{
-				"buffer_size": 1447,
+				"buffer_size": 1495,
 				"line_ending": "Unix"
 			}
 		},
@@ -285,22 +285,6 @@
 			{
 				"buffer_size": 1534,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "test/spec/SpecController.js",
-			"settings":
-			{
-				"buffer_size": 2431,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "js/frame.js",
-			"settings":
-			{
-				"buffer_size": 752,
-				"line_ending": "Unix"
 			}
 		}
 	],
@@ -416,13 +400,13 @@
 	},
 	"file_history":
 	[
+		"/D/Git/2048/test/spec/SpecController.js",
+		"/D/Git/2048/test/spec/SpecFrame.js",
+		"/D/Git/2048/js/frame.js",
 		"/D/Git/2048/js/grid.js",
 		"/D/Git/2048/js/index.js",
 		"/D/Git/2048/js/endgame.js",
-		"/D/Git/2048/test/spec/SpecController.js",
-		"/D/Git/2048/test/spec/SpecFrame.js",
 		"/D/Git/2048/js/view.js",
-		"/D/Git/2048/js/frame.js",
 		"/D/Librerías/Web/Javascript/Testing/jasmine-standalone-2.0.2/SpecRunner.html",
 		"/D/Git/2048/js/score.js",
 		"/D/Git/2048/js/modegame.js",
@@ -640,15 +624,15 @@
 					"file": "test/test.html",
 					"settings":
 					{
-						"buffer_size": 1447,
+						"buffer_size": 1495,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1413,
-								1413
+								1385,
+								1385
 							]
 						],
 						"settings":
@@ -675,62 +659,8 @@
 						"selection":
 						[
 							[
-								1529,
-								1529
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 390.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "test/spec/SpecController.js",
-					"settings":
-					{
-						"buffer_size": 2431,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1555,
-								1555
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 480.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "js/frame.js",
-					"settings":
-					{
-						"buffer_size": 752,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
+								1213,
+								1213
 							]
 						],
 						"settings":
