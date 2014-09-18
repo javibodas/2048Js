@@ -80,7 +80,6 @@ $(document).ready(function() {
 /*-------------------*/
 
 	var tableGame = $('body');
-	var hammertime = new Hammer(tableGame);
 
 	//RELOAD THE GAME
 	$(this.getElementById('reload')).click(function (){
@@ -89,6 +88,7 @@ $(document).ready(function() {
 
 	//MOVES (Desktop: Keys, Mobile: Swipes)
 	if(isMobileBrowser){
+		/*
 		hammertime.on('swipeleft', function(){
 			moveFrames('left',controller,view,grid,score,end,modegame);
 		});
@@ -101,7 +101,7 @@ $(document).ready(function() {
 		hammertime.on('swipedown', function(){
 			moveFrames('down',controller,view,grid,score,end,modegame);
 		});
-		
+		*/
 	}else{
 		$(this).keydown(function(key) {
 			var code = key.which;
@@ -230,7 +230,7 @@ var moveFrames = function(way,controller,view,grid,score,end,mode){
 			if(!grid.isPosibleToMoveSomething()){
 				end.endGameBad(mode);
 				alert('El juego ha terminado');
-				controller.load(reload);
+				controller.load(reload,mode);
 			}
 		}
 	}else{

@@ -264,14 +264,6 @@
 	"buffers":
 	[
 		{
-			"file": "js/controller.js",
-			"settings":
-			{
-				"buffer_size": 9392,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "test/test.html",
 			"settings":
 			{
@@ -280,20 +272,56 @@
 			}
 		},
 		{
+			"file": "js/view.js",
+			"settings":
+			{
+				"buffer_size": 2048,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/controller.js",
+			"settings":
+			{
+				"buffer_size": 9392,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "test/spec/SpecGrid.js",
 			"settings":
 			{
-				"buffer_size": 1534,
+				"buffer_size": 3813,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "test/spec/SpecController.js",
+			"settings":
+			{
+				"buffer_size": 2431,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/grid.js",
+			"settings":
+			{
+				"buffer_size": 3636,
+				"line_ending": "Unix"
 			}
 		}
 	],
 	"build_system": "Packages/SASS Build/SASS - Compressed.sublime-build",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 58.0,
 		"selected_items":
 		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
 			[
 				"Pac",
 				"Package Control: Install Package"
@@ -325,10 +353,6 @@
 			[
 				"git commit",
 				"Git: Commit"
-			],
-			[
-				"insta",
-				"Package Control: Install Package"
 			],
 			[
 				"install",
@@ -400,13 +424,14 @@
 	},
 	"file_history":
 	[
+		"/D/Git/2048/js/grid.js",
+		"/D/Git/2048/js/frame.js",
+		"/D/Git/2048/js/view.js",
+		"/D/Git/2048/css/index.css",
 		"/D/Git/2048/test/spec/SpecController.js",
 		"/D/Git/2048/test/spec/SpecFrame.js",
-		"/D/Git/2048/js/frame.js",
-		"/D/Git/2048/js/grid.js",
 		"/D/Git/2048/js/index.js",
 		"/D/Git/2048/js/endgame.js",
-		"/D/Git/2048/js/view.js",
 		"/D/Librerías/Web/Javascript/Testing/jasmine-standalone-2.0.2/SpecRunner.html",
 		"/D/Git/2048/js/score.js",
 		"/D/Git/2048/js/modegame.js",
@@ -416,7 +441,6 @@
 		"/D/Git/2048/test/jasmine-2.0.2/boot.js",
 		"/C/xampp/htdocs/Hola.html",
 		"/D/Git/2048/js/mobileCheck.js",
-		"/D/Git/2048/css/index.css",
 		"/home/javier/Git/2048/index.html",
 		"/home/javier/Git/2048/js/endgame.js",
 		"/home/javier/Git/2048/js/controller.js",
@@ -589,11 +613,68 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "test/test.html",
+					"settings":
+					{
+						"buffer_size": 1495,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								961,
+								961
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/view.js",
+					"settings":
+					{
+						"buffer_size": 2048,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "js/controller.js",
 					"settings":
 					{
@@ -610,6 +691,7 @@
 						],
 						"settings":
 						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
@@ -620,56 +702,85 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "test/test.html",
-					"settings":
-					{
-						"buffer_size": 1495,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1385,
-								1385
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "test/spec/SpecGrid.js",
 					"settings":
 					{
-						"buffer_size": 1534,
+						"buffer_size": 3813,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1213,
-								1213
+								1167,
+								1167
 							]
 						],
 						"settings":
 						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "test/spec/SpecController.js",
+					"settings":
+					{
+						"buffer_size": 2431,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								566,
+								566
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 150.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "js/grid.js",
+					"settings":
+					{
+						"buffer_size": 3636,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								214,
+								214
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 15.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
