@@ -264,18 +264,18 @@
 	"buffers":
 	[
 		{
-			"file": "test/test.html",
+			"file": "js/index.js",
 			"settings":
 			{
-				"buffer_size": 1495,
+				"buffer_size": 7261,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "js/view.js",
+			"file": "js/endgame.js",
 			"settings":
 			{
-				"buffer_size": 2048,
+				"buffer_size": 532,
 				"line_ending": "Unix"
 			}
 		},
@@ -283,31 +283,7 @@
 			"file": "js/controller.js",
 			"settings":
 			{
-				"buffer_size": 9392,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "test/spec/SpecGrid.js",
-			"settings":
-			{
-				"buffer_size": 3813,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "test/spec/SpecController.js",
-			"settings":
-			{
-				"buffer_size": 2431,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "js/grid.js",
-			"settings":
-			{
-				"buffer_size": 3636,
+				"buffer_size": 9402,
 				"line_ending": "Unix"
 			}
 		}
@@ -407,7 +383,7 @@
 				"Package Control: Discover Packages"
 			]
 		],
-		"width": 416.0
+		"width": 400.0
 	},
 	"console":
 	{
@@ -424,11 +400,17 @@
 	},
 	"file_history":
 	[
+		"/D/Git/2048/index.html",
+		"/D/Git/2048/test/spec/SpecController.js",
+		"/D/Git/2048/js/controller.js",
+		"/D/Git/2048/js/view.js",
+		"/D/Git/2048/test/test.html",
+		"/D/Git/2048/lib/hammer.min.js",
+		"/D/Informatica/4 Año/Programacion Declarativa/Jefe.pl",
+		"/D/Git/2048/test/spec/SpecGrid.js",
 		"/D/Git/2048/js/grid.js",
 		"/D/Git/2048/js/frame.js",
-		"/D/Git/2048/js/view.js",
 		"/D/Git/2048/css/index.css",
-		"/D/Git/2048/test/spec/SpecController.js",
 		"/D/Git/2048/test/spec/SpecFrame.js",
 		"/D/Git/2048/js/index.js",
 		"/D/Git/2048/js/endgame.js",
@@ -437,7 +419,6 @@
 		"/D/Git/2048/js/modegame.js",
 		"/D/Git/2048/test/spec/SpecView.js",
 		"/D/Librerías/Web/Javascript/Testing/jasmine-standalone-2.0.2/spec/PlayerSpec.js",
-		"/D/Git/2048/index.html",
 		"/D/Git/2048/test/jasmine-2.0.2/boot.js",
 		"/C/xampp/htdocs/Hola.html",
 		"/D/Git/2048/js/mobileCheck.js",
@@ -546,12 +527,7 @@
 		"/home/javier/Git/JuegoJS/scss/index.scss",
 		"/home/javier/.cache/.fr-3GTIIB/d3.js",
 		"/home/javier/Git/javibodas.github.io/scss/mixin.scss",
-		"/home/javier/Git/javibodas.github.io/scss/entradas.scss",
-		"/home/javier/Git/javibodas.github.io/css/entradas.css",
-		"/home/javier/Git/javibodas.github.io/css/stylesheet.css",
-		"/home/javier/Git/JuegoJS/index.js",
-		"/home/javier/Git/javibodas.github.io/stylesheets/stylesheet.css",
-		"/home/javier/Git/javibodas.github.io/stylesheets/pygment_trac.css"
+		"/home/javier/Git/javibodas.github.io/scss/entradas.scss"
 	],
 	"find":
 	{
@@ -613,31 +589,30 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "test/test.html",
+					"file": "js/index.js",
 					"settings":
 					{
-						"buffer_size": 1495,
+						"buffer_size": 7261,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								961,
-								961
+								7162,
+								7162
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -647,10 +622,10 @@
 				},
 				{
 					"buffer": 1,
-					"file": "js/view.js",
+					"file": "js/endgame.js",
 					"settings":
 					{
-						"buffer_size": 2048,
+						"buffer_size": 532,
 						"regions":
 						{
 						},
@@ -678,15 +653,15 @@
 					"file": "js/controller.js",
 					"settings":
 					{
-						"buffer_size": 9392,
+						"buffer_size": 9402,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4250,
-								4250
+								704,
+								704
 							]
 						],
 						"settings":
@@ -696,91 +671,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "test/spec/SpecGrid.js",
-					"settings":
-					{
-						"buffer_size": 3813,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1167,
-								1167
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "test/spec/SpecController.js",
-					"settings":
-					{
-						"buffer_size": 2431,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								566,
-								566
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 150.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "js/grid.js",
-					"settings":
-					{
-						"buffer_size": 3636,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								214,
-								214
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 15.0,
+						"translation.y": 120.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
